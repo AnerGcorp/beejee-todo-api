@@ -9,7 +9,7 @@ def index(request):
 	if request.method == 'GET':
 		fields = ["username", "status", "email", "text"]
 		directions = ['asc' , 'desc']
-		# csrf_token = csrf.get_token(request)
+		
 		# params
 		sort_field = request.GET.get("sort_field" , "username").lower()
 		sort_direction = request.GET.get("sort_direction" , "desc").lower()
